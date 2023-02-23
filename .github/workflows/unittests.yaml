@@ -11,7 +11,7 @@ jobs:
           python-version: 3.11.0
           architecture: x64
       - name: Install dependencies
-        COPY requirements.txt /tmp/
+
         RUN pip install --requirement /tmp/requirements.txt
       - name: Run Tests
         run: python -m pytest
