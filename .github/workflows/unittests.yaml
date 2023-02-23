@@ -11,6 +11,6 @@ jobs:
           python-version: 3.11.0
           architecture: x64
       - name: Install dependencies
-        run: pip install -r C:\Users\Tayfun\Desktop\git-automated-testing-opdracht\add-automated-tests-off-platform-project\requirements.txt
+        run: pip install -r requirements.txt
       - name: Run Test
         run: python -m pytest
