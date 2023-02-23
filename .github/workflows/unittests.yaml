@@ -13,4 +13,4 @@ jobs:
       - name: Install dependencies
         run: pip freeze > requirements.txt
       - name: Run Test
-        run: touch tests/__init__.py
+        run: python -m pytest
