@@ -11,6 +11,6 @@ jobs:
           python-version: 3.11.0
           architecture: x64
       - name: Install dependencies
-        run: pip install -r requirements.txt 
+        RUN pip freeze > requirements.txt
       - name: Run Tests
         run: python -m pytest
